@@ -1,0 +1,42 @@
+.nav {
+    background-color: #fcfcfc;
+    position : fixed;
+    width : 100%;
+    padding : 20px 50px;
+    left : 0px;
+    bottom: 0px;
+    border-top:1px solid #f7f7f7;
+    
+}
+
+.nav .nav__list {
+    display : flex;
+    justify-content: space-between
+    /* 그냥하면 끝의 아이콘 1개가 사라짐, 해결방법은 style.css에 
+    * {
+        box-sizing : border-box;    박스 사이즈?? 가 뭔진 모르겠지만 이게 문제였음
+     } */
+}
+
+.nav i {
+    font-size: 20px;
+}
+
+.nav .nav__list-link {
+    position: relative;
+}
+
+.nav .nav__badge {
+    position: absolute;
+    top : -10px;
+    right : -10px;
+    color: white;
+    background-color: #dc5d46;
+    font-size: 15px;
+    width : 20px;
+    height: 20px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}

@@ -7,13 +7,17 @@
     <title>Chats | Kakao Clone</title>
     <!--아래의 <link>를 통해 폰트스타일을 import해줌 아이콘은 FontAwesome에서 가져다 쓰고, CSS파일만 import하면 됨 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--아래의 <link>는 styles.css를 참조하는건데, styles.css안에 reset.css가 들어있음 -->
+    <!-- 모든 margin, padding값을 0으로 font-size는 같게 만들어줌 -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">17:32</span>
-        </div>
+        </div> 
         <div class="status-bar__column">
             <i class="far fa-clock"></i>
             <i class="fas fa-volume-mute"></i>
@@ -74,6 +78,7 @@
 
             <li class="nav__list-item">
                 <a href="index.html" class="nav__list-link">
+                    <div class="nav__badge">8</div>
                     <i class="fas fa-comment"></i>
                 </a>
             </li>
